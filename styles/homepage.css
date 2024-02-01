@@ -1,77 +1,51 @@
-/*======================
-    Landing page
-=======================*/
-
 body {
-    background: #efffe0;
-    color: #313131;
-  }
-  
-  
-  @keyframes fadeIn {
-    from {top: 20%; opacity: 0;}
-    to {top: 100; opacity: 1;}
-    
-  }
-  
-  @-webkit-keyframes fadeIn {
-    from {top: 20%; opacity: 0;}
-    to {top: 100; opacity: 1;}
-    
-  }
-  
-  .wrapper {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    animation: fadeIn 1000ms ease;
-    -webkit-animation: fadeIn 1000ms ease;
-    
-  }
-  
-  h1 {
-    font-size: 50px;
-    font-family: 'Poppins', sans-serif;
-    margin-bottom: 0;
-    line-height: 1;
-    font-weight: 700;
-  }
-  
-  
-  p {
-    text-align: center;
-    margin: 18px;
     font-family: 'Muli', sans-serif;
-    font-weight: normal;
-    
-  }
-  
-  .icons {
+    color: #333;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper {
     text-align: center;
-    
-  }
-  
-  .icons i {
-    color: #313131;
-    background: #fff;
-    height: 15px;
-    width: 15px;
-    padding: 13px;
+    width: 80%;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em;
+    color: #333;
+}
+
+h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+#nanodl-intro, #features, #benefits {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.icons {
+    margin-top: 20px;
+}
+
+.icons a {
+    color: #333;
     margin: 0 10px;
-    border-radius: 50px;
-    border: 2px solid #313131;
-    transition: all 200ms ease;
-    text-decoration: none;
-    position: relative;
-  }
-  
-  .icons i:hover, .icons i:active {
-    background: none;
-    cursor: pointer !important;
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    text-decoration: none;
-    
-  }
+    font-size: 2em;
+}
+
+.icons a:hover {
+    color: #0077b5; /* LinkedIn color */
+}
